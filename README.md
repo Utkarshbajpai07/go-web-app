@@ -46,20 +46,21 @@ The application is built using **Go 1.22** and serves a simple multi-page websit
 
 go-web-app/
 ├── .github/workflows/
-│ └── ci.yaml # GitHub Actions CI/CD pipeline
+│   └── ci.yaml                 # GitHub Actions CI/CD pipeline
 ├── helm/go-web-app-chart/
-│ ├── templates/ # Kubernetes manifest templates
-│ ├── Chart.yaml # Helm chart metadata
-│ └── values.yaml # Configuration values
+│   ├── templates/              # Kubernetes manifest templates
+│   ├── Chart.yaml             # Helm chart metadata
+│   └── values.yaml            # Configuration values
 ├── k8s/manifests/
-│ ├── deployment.yaml # Kubernetes deployment
-│ ├── service.yaml # Kubernetes service
-│ └── ingress.yaml # Ingress configuration
-├── static/ # Static HTML files
-├── Dockerfile # Multi-stage Docker build
-├── main.go # Go application source
-├── main_test.go # Unit tests
-└── go.mod # Go module definition
+│   ├── deployment.yaml        # Kubernetes deployment
+│   ├── service.yaml          # Kubernetes service
+│   └── ingress.yaml          # Ingress configuration
+├── static/                    # Static HTML files
+├── Dockerfile                 # Multi-stage Docker build
+├── main.go                   # Go application source
+├── main_test.go             # Unit tests
+└── go.mod                   # Go module definition
+
 
 
 ## 🔧 Key DevOps Features Implemented
