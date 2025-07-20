@@ -45,21 +45,31 @@ The application is built using **Go 1.22** and serves a simple multi-page websit
 ## 🏗️ Project Structure
 
 go-web-app/
-├── .github/workflows/
-│   └── ci.yaml                 # GitHub Actions CI/CD pipeline
-├── helm/go-web-app-chart/
-│   ├── templates/              # Kubernetes manifest templates
-│   ├── Chart.yaml             # Helm chart metadata
-│   └── values.yaml            # Configuration values
-├── k8s/manifests/
-│   ├── deployment.yaml        # Kubernetes deployment
-│   ├── service.yaml          # Kubernetes service
-│   └── ingress.yaml          # Ingress configuration
-├── static/                    # Static HTML files
-├── Dockerfile                 # Multi-stage Docker build
-├── main.go                   # Go application source
-├── main_test.go             # Unit tests
-└── go.mod                   # Go module definition
+├── .github/workflows/           # GitHub Actions CI/CD automation
+│   └── ci.yaml                  # Main CI/CD pipeline configuration
+├── helm/go-web-app-chart/       # Helm chart for Kubernetes deployments
+│   ├── templates/               # Kubernetes manifest templates
+│   ├── .helmignore             # Files to ignore in Helm packaging
+│   ├── Chart.yaml              # Helm chart metadata
+│   └── values.yaml             # Configuration values
+├── k8s/manifests/              # Raw Kubernetes manifests
+│   ├── deployment.yaml         # Application deployment configuration
+│   ├── service.yaml            # Service for load balancing
+│   └── ingress.yaml            # External access configuration
+├── static/                     # Static HTML web content
+│   ├── images/                 # Image assets
+│   ├── about.html              # About page
+│   ├── contact.html            # Contact page  
+│   ├── courses.html            # Courses page
+│   └── home.html               # Home page
+├── .gitignore                  # Git ignore configuration
+├── Dockerfile                  # Multi-stage Docker build
+├── LICENSE                     # Apache 2.0 license
+├── README.md                   # Project documentation
+├── go.mod                      # Go module definition
+├── main                        # Compiled binary
+├── main.go                     # Main Go application source
+└── main_test.go               # Unit tests
 
 
 
